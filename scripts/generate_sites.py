@@ -63,7 +63,7 @@ def generate_sites_for_containers(containers, default_config="basic_proxy.conf")
                         .replace("{{container_port}}", str(port))
 
         # saving template
-        with open(conf_path, 'a+') as f:
+        with open(conf_path, 'w+') as f:
             f.write(template)
 
 
