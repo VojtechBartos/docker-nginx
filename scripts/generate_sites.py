@@ -22,7 +22,7 @@ def detect_linked_containers(environ):
             config.update({
                 'port': urlparse(value).port
             })
-        elif name.endswith('_ENV_HOSTNAME') and len(parts) == 4:
+        elif name.endswith('_ENV_NGINX_HOSTNAME') and len(parts) == 4:
             config.update({
                 'hostname': value
             })
